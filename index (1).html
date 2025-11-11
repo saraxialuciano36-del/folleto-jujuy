@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tesoros históricos de Jujuy</title>
+  <style>
+    :root{
+      --bg: #f6efe2;
+      --card: #fff;
+      --accent: #2a6fb8;
+      --gold: #d3a24a;
+      --text: #2b2b2b;
+      --muted: #6b5e55;
+      --shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+    body{
+      margin:0;
+      font-family: "Georgia", "Times New Roman", serif;
+      background: linear-gradient(180deg,var(--bg), #efe6d5);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{
+      max-width:1100px;
+      margin:40px auto;
+      padding:28px;
+    }
+    header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:20px;
+    }
+    .title {
+      font-size:34px;
+      font-weight:700;
+      letter-spacing:1px;
+      color:var(--accent);
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.6);
+    }
+    .subtitle {
+      color:var(--muted);
+      font-size:14px;
+      margin-top:6px;
+    }
+    .hero {
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:20px;
+      align-items:start;
+    }
+    .card {
+      background:var(--card);
+      padding:16px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      border-left:6px solid var(--gold);
+    }
+    .gallery {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .gallery img {
+      width:100%;
+      height:auto;
+      border-radius:10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      display:block;
+    }
+    .info {
+      padding:18px;
+    }
+    .download-btn {
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:12px 18px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 8px 20px rgba(42,111,184,0.24);
+    }
+    .download-small {
+      display:block;
+      margin-top:12px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    footer {
+      margin-top:26px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <div class="title">Tesoros históricos de Jujuy</div>
+        <div class="subtitle">Casa de Gobierno & Iglesia Basílica — Guía turística breve</div>
+      </div>
+      <div style="text-align:right">
+        <a class="download-btn" href="tesoros_jujuy_folleto.pdf" download>Descargar folleto (PDF)</a>
+        <div class="download-small">PDF preparado con las páginas del folleto.</div>
+      </div>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <div class="info">
+          <h3 style="margin:0 0 8px 0; color:var(--gold)">Sobre este folleto</h3>
+          <p style="margin:0 0 12px 0; color:var(--muted)">
+            Este folleto reúne información y recomendaciones para visitar la Casa de Gobierno y la Catedral
+            de San Salvador de Jujuy. Ideal para turistas, estudiantes y profesores.
+          </p>
+          <ul style="color:var(--muted); margin-top:8px">
+            <li>Diseño turístico y elegante</li>
+            <li>Incluye mapa y sugerencias de ruta</li>
+            <li>Tiempo recomendado: 20–45 minutos</li>
+          </ul>
+          <a class="download-btn" style="margin-top:14px; display:inline-block" href="tesoros_jujuy_folleto.pdf" download>Descargar folleto (PDF)</a>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card" style="text-align:center">
+          <h4 style="margin:6px 0 12px 0; color:var(--accent)">Vista rápida</h4>
+          <div style="font-size:13px; color:var(--muted); margin-bottom:12px">Desliza o abre en pantalla grande para ver las páginas</div>
+          <div class="gallery">
+            <img src="folleto_page1.jpg" alt="Folleto - página 1">
+            <img src="folleto_page2.jpg" alt="Folleto - página 2">
+          </div>
+          <div style="margin-top:12px; font-size:12px; color:var(--muted)">Si querés usar esta página en tu propio dominio, subí el archivo HTML y el PDF al mismo directorio.</div>
+        </div>
+      </aside>
+
+    </main>
+
+    <footer>
+      © sandbox · Diseñado para promoción turística de Jujuy
+    </footer>
+  </div>
+</body>
+</html>
